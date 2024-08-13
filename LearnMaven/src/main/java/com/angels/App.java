@@ -4,10 +4,12 @@ package com.angels;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+//        create object of the Car class
+        Car car = new Car();
+        car.drive();
     }
 }
