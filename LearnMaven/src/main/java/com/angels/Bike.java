@@ -1,6 +1,6 @@
 package com.angels;
 
-public class Bike {
+public class Bike implements Vehicle{
 
 //    create a ride method
     public void drive(){
