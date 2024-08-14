@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--create a beans tag and get the beans definition from https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+<!--        <bean id="vehicle" class="com.angels.Bike"></bean>-->
+    <context:component-scan base-package="com.angels"/>
+    <bean id="tyre" class="com.angels.Tyre">
+        <property name="brand" value="MRF"></property>
+    </bean>
+</beans>
