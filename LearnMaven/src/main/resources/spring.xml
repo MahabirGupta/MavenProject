@@ -10,10 +10,10 @@
 		https://www.springframework.org/schema/context/spring-context.xsd">
 <!--        <bean id="vehicle" class="com.angels.Bike"></bean>-->
     <context:component-scan base-package="com.angels"/>
-    <bean id="tyre" class="com.angels.Tyre">
+<!--    <bean id="tyre" class="com.angels.Tyre">-->
 <!--        Only for setter injection-->
 <!--        <property name="brand" value="MRF"></property> -->
 <!--        For constructor injection-->
-        <constructor-arg value="CEAF"></constructor-arg>
-    </bean>
+<!--        <constructor-arg value="CEAF"></constructor-arg>-->
+<!--    </bean>-->
 </beans>

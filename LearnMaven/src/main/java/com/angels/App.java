@@ -18,8 +18,10 @@ public class App
 //        obj.drive();
 //       ApplicationContext is an interface
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Vehicle obj = (Vehicle) context.getBean("bike");
-        obj.drive();
+//        Vehicle obj = (Vehicle) context.getBean("bike");
+//        obj.drive();
+        Car car = (Car) context.getBean("car");
+        car.drive();
 
         Tyre tyre = (Tyre) context.getBean("tyre");
         System.out.println(tyre);
