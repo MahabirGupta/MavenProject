@@ -11,6 +11,9 @@
 <!--        <bean id="vehicle" class="com.angels.Bike"></bean>-->
     <context:component-scan base-package="com.angels"/>
     <bean id="tyre" class="com.angels.Tyre">
-        <property name="brand" value="MRF"></property>
+<!--        Only for setter injection-->
+<!--        <property name="brand" value="MRF"></property> -->
+<!--        For constructor injection-->
+        <constructor-arg value="CEAF"></constructor-arg>
     </bean>
 </beans>
